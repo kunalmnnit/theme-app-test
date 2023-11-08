@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "theme-app-test"
+client_id = "f681285a8bef5dc1eb65d85bfe409e0d"
+application_url = "https://germany-scroll-path-targeted.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://germany-scroll-path-targeted.trycloudflare.com/auth/callback",
+  "https://germany-scroll-path-targeted.trycloudflare.com/auth/shopify/callback",
+  "https://germany-scroll-path-targeted.trycloudflare.com/api/auth/callback",
+  "https://germany-scroll-path-targeted.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "sample-client-1.myshopify.com"
